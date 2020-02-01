@@ -52,30 +52,30 @@ name = "Project"
 URL = "project"
 weight = 2
 
-[[menu.main]]
-name = "Service"
-URL = "service"
-weight = 3
+# [[menu.main]]
+# name = "Service"
+# URL = "service"
+# weight = 3
 
-[[menu.main]]
-name = "Blog"
-URL = "blog"
-weight = 4
+# [[menu.main]]
+# name = "Blog"
+# URL = "blog"
+# weight = 4
 
-[[menu.main]]
-weight = 5
-name = "Pages"
-hasChildren = true
+# [[menu.main]]
+# weight = 5
+# name = "Pages"
+# hasChildren = true
 
-  [[menu.main]]
-  parent = "Pages"
-  name = "FAQ"
-  URL = "faq"
+#   [[menu.main]]
+#   parent = "Pages"
+#   name = "FAQ"
+#   URL = "faq"
 
-  [[menu.main]]
-  parent = "Pages"
-  name = "Pricing"
-  URL = "pricing"
+#   [[menu.main]]
+#   parent = "Pages"
+#   name = "Pricing"
+#   URL = "pricing"
   
 [[menu.main]]
 name = "Contact"
@@ -94,20 +94,20 @@ name = "Project"
 URL = "project"
 weight = 2
 
-[[menu.footer]]
-name = "Service"
-URL = "service"
-weight = 3
+# [[menu.footer]]
+# name = "Service"
+# URL = "service"
+# weight = 3
 
-[[menu.footer]]
-name = "Pricing"
-URL = "pricing"
-weight = 4
+# [[menu.footer]]
+# name = "Pricing"
+# URL = "pricing"
+# weight = 4
 
-[[menu.footer]]
-name = "FAQ"
-URL = "faq"
-weight = 5
+# [[menu.footer]]
+# name = "FAQ"
+# URL = "faq"
+# weight = 5
 
 [[menu.footer]]
 name = "Contact"
