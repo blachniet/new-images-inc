@@ -1,6 +1,7 @@
 ################################# Default configuration ###################
-baseURL = "https://examplesite.com"
-title = "Airspace | Creative Agency Hugo Template"
+baseURL = "https://blachniet.github.io/new-images-inc/"
+title = "New Images, Inc."
+publishDir = "docs"
 theme = "airspace-hugo"
 # post pagination
 paginate = "4"
