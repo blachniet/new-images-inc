@@ -38,6 +38,8 @@ link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
 link = "plugins/shuffle/shuffle.min.js"
 [[params.plugins.js]]
 link = "plugins/google-map/gmap.js"
+[[params.plugins.js]]
+link = "https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"
 
   
 ############################## navigation ###############################

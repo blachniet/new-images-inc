@@ -1,23 +1,26 @@
 ---
-title: "Rio Furniture"
-description: "this is meta description"
+title: "The Lodge"
+description: "Cozy"
 draft: false
-image : "images/portfolio/work1.jpg"
-bg_image: "images/featue-bg.jpg"
+image : "images/homes/lodge-0.jpg"
+bg_image: "images/homes/lodge-0.jpg"
+images:
+- url: "images/homes/lodge-1.jpg"
+  width: "33%"
+- url: "images/homes/lodge-2.jpg"
+  width: "66%"
+- url: "images/homes/lodge-3.jpg"
+  width: "33%"
 category: "UI/UX Design"
 information:
-  - label : "Client"
-    info : "Jannie Kelonsky"
-  - label : "What We Did"
-    info : "Website Redesign"
-  - label : "Tools Used"
-    info : "Photoshop,Illustrator"
-  - label : "Completed on"
-    info : "17th March 2014"
-  - label : "Skills"
-    info : "HTML5 / PHP / CSS3"
-  - label : "Client"
-    info : "Jannie Kelonsky"
+  - label : "Bedrooms"
+    info : "3"
+  - label : "Bathrooms"
+    info : "2.5"
+  - label : "Square footage"
+    info : "2,400"
+  - label : "Starting at"
+    info : "$300,000"
 ---
 
 ## Behance Website Redesign
