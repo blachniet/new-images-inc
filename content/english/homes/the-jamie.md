@@ -1,23 +1,22 @@
 ---
-title: "Rio Furniture"
+title: "The Jamie"
 description: "this is meta description"
 draft: false
-image : "images/portfolio/work2.jpg"
-bg_image: "images/featue-bg.jpg"
-category: "Illustration"
+image : "images/homes/jamie-0.jpg"
+bg_image: "images/homes/jamie-0.jpg"
+images:
+- url: "images/homes/jamie-0.jpg"
+  width: "33%"
+category: "Video"
 information:
-  - label : "Client"
-    info : "Jannie Kelonsky"
-  - label : "What We Did"
-    info : "Website Redesign"
-  - label : "Tools Used"
-    info : "Photoshop,Illustrator"
-  - label : "Completed on"
-    info : "17th March 2014"
-  - label : "Skills"
-    info : "HTML5 / PHP / CSS3"
-  - label : "Client"
-    info : "Jannie Kelonsky"
+  - label : "Bedrooms"
+    info : "3"
+  - label : "Bathrooms"
+    info : "2.5"
+  - label : "Square footage"
+    info : "2,400"
+  - label : "Starting at"
+    info : "$300,000"
 ---
 
 ## Behance Website Redesign
