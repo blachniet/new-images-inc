@@ -5,6 +5,10 @@ Go
 - [Hero image](https://www.w3schools.com/howto/howto_css_hero_image.asp)
 - [tailwindcss font sizes](https://tailwindcss.com/docs/font-size)
 
+## Other credits
+
+- FontAwesome
+
 ## Image credits
 
 - https://unsplash.com/photos/q2Fyzn-KJOQ

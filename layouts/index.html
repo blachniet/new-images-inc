@@ -18,9 +18,9 @@
 
   {{ $normalize := resources.Get "css/normalize.css" | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $normalize.Permalink }}">
-  {{ $style := resources.Get "css/style.css" | toCSS | minify | fingerprint }}
+  {{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
-  <link href="/fontawesome/css/all.min.css" rel="stylesheet"> <!--load all styles -->
+  <link href="{{.Site.BaseURL}}/fontawesome/css/all.min.css" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -52,15 +52,15 @@
 
     <section class="flex py-12">
       <div class="flex-1 text-center card">
-        <img class="max-w-sm rounded-lg" src="/img/ryan-ancill-nGsVMkRatgM-unsplash.jpg">
+        <img class="max-w-sm rounded-lg" src="{{.Site.BaseURL}}/img/ryan-ancill-nGsVMkRatgM-unsplash.jpg">
         <div class="text-3xl py-4">New Construction</div>
       </div>
       <div class="flex-1 text-center card">
-        <img class="max-w-sm rounded-lg" src="/img/jessie-mccall-a9_8YKoqIYo-unsplash.jpg">
+        <img class="max-w-sm rounded-lg" src="{{.Site.BaseURL}}/img/jessie-mccall-a9_8YKoqIYo-unsplash.jpg">
         <div class="text-3xl py-4">Additions</div>
       </div>
       <div class="flex-1 text-center card">
-        <img class="max-w-sm rounded-lg" src="/img/charles-deluvio-xC3cHbp4XJE-unsplash.jpg">
+        <img class="max-w-sm rounded-lg" src="{{.Site.BaseURL}}/img/charles-deluvio-xC3cHbp4XJE-unsplash.jpg">
         <div class="text-3xl py-4">Renovations</div>
       </div>
     </section>
@@ -73,7 +73,7 @@
     </section>
 
     <div class="py-12 text-center">
-      <a class="btn text-4xl py-6 px-10" href="tel:+18042406305"><i class="fas fa-phone-alt"></i>&nbsp;Call Today</a>
+      <a class="btn text-4xl py-6 px-10" href="tel:+18042406305"><i class="fas fa-phone-alt"></i>&nbsp;Call Now</a>
     </div>
 
     <footer class="px-12 py-12 text-center">
