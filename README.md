@@ -8,6 +8,7 @@ Go
 ## Other credits
 
 - FontAwesome
+- Favicon generator: <https://favicon.io/favicon-converter/>
 
 ## Image credits
 

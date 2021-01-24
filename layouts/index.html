@@ -9,23 +9,25 @@
 
   <meta property="og:title" content="New Images, Inc.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="{{.Site.BaseURL}}/">
-  <meta property="og:image" content="{{.Site.BaseURL}}/img/logo-150.png">
+  <meta property="og:url" content="{{.Site.BaseURL}}">
+  <meta property="og:image" content="{{.Site.BaseURL}}img/logo-150.png">
   <meta property="og:description" content="We build quality homes in any price range!">
   <meta property="og:determiner" content="">
   <meta property="og:locale" content="en_US">
   <meta property="fb:app_id" content="113296066822580">
   <meta property="fb:app:id" content="113296066822580">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  {{ $manifest := resources.Get "site.webmanifest" | resources.ExecuteAsTemplate "site.webmanifest" . }}
+  <link rel="manifest" href="{{ $manifest.Permalink }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{.Site.BaseURL}}apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{.Site.BaseURL}}favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{.Site.BaseURL}}favicon-16x16.png">
 
   {{ $normalize := resources.Get "css/normalize.css" | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $normalize.Permalink }}">
   {{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.Permalink }}">
-  <link href="{{.Site.BaseURL}}/fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="{{.Site.BaseURL}}fontawesome/css/all.min.css" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -57,15 +59,15 @@
 
     <section class="flex py-12">
       <div class="flex-1 text-center card">
-        <img class="max-w-sm rounded-lg" src="{{.Site.BaseURL}}/img/ryan-ancill-nGsVMkRatgM-unsplash.jpg">
+        <img class="max-w-sm rounded-lg" src="{{.Site.BaseURL}}img/ryan-ancill-nGsVMkRatgM-unsplash.jpg">
         <div class="text-3xl py-4">Custom Homes</div>
       </div>
       <div class="flex-1 text-center card">
-        <img class="max-w-sm rounded-lg" src="{{.Site.BaseURL}}/img/jessie-mccall-a9_8YKoqIYo-unsplash.jpg">
+        <img class="max-w-sm rounded-lg" src="{{.Site.BaseURL}}img/jessie-mccall-a9_8YKoqIYo-unsplash.jpg">
         <div class="text-3xl py-4">Additions</div>
       </div>
       <div class="flex-1 text-center card">
-        <img class="max-w-sm rounded-lg" src="{{.Site.BaseURL}}/img/im3rd-media-HlJuQDBh3w4-unsplash.jpg">
+        <img class="max-w-sm rounded-lg" src="{{.Site.BaseURL}}img/im3rd-media-HlJuQDBh3w4-unsplash.jpg">
         <div class="text-3xl py-4">Decks & Sheds</div>
       </div>
     </section>
