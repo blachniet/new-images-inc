@@ -1,6 +1,7 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "New Images, Inc.",
+    "short_name": "New Images, Inc.",
+    "description": "We build quality homes in any price range!",
     "icons": [
         {
             "src": "https://newimagesva.com/android-chrome-192x192.png",
