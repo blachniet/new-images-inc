@@ -86,11 +86,46 @@
       <a class="btn text-4xl py-6 px-10" href="tel:+18042406305"><i class="fas fa-phone-alt"></i>&nbsp;Call Now</a>
     </div>
 
-    <section class="section-about">
-      <h3>About us</h3>
-      <p>We have been in the home building industry for over 35 years. We create a unique build, paying attention not only to detail in cosetic appeal, but also the quality of construction.</p>
-      <p>We're here to serve you in Powhatan, Goochland, Chesterfield, Amelia, Cumberland, Farmville, Buckingham and the surrounding areas.</p>
-      <p>Whether you're looking for your first home or your <strong>forever</strong> home, we would love to serve you!</p>
+    <section id="contact" class="section-contact" style="background-image: url('{{.Site.BaseURL}}img/footer_lodyas.png'); background-repeat: repeat; color: white;">
+      <h3 class="text-3xl text-center">Contact us</h3>
+      <div class="px-2 text-center text-xl">
+        <p>Have questions or looking for a quote?</p>
+        <div class="py-4">
+          <a href="tel:+18042406305" class="text-xl px-12 py-4 rounded-lg shadow-md btn-normal no-underline"><i class="fas fa-phone-alt"></i>&nbsp;Call us</a>
+        </div>
+        <p>Or, send us a message:</p>
+      </div>
+      <div class="">
+        <form
+          action="https://formspree.io/f/xdopbpll"
+          method="POST"
+        >
+          <div class="py-2">
+            <input type="text" name="name" placeholder="Your Name" class="rounded-md block w-full p-4 text-lg box-border">
+          </div>
+          <div class="py-2">
+            <input type="email" name="_replyto" placeholder="Your Email" class="rounded-md block w-full p-4 text-lg box-border">
+          </div>
+          <div class="py-2">
+            <input type="tel" name="phone" placeholder="Your Phone" class="rounded-md block w-full p-4 text-lg box-border">
+          </div>
+          <div class="py-2">
+            <textarea name="message" placeholder="Your Message" class="rounded-md block w-full p-4 text-lg box-border" rows="4"></textarea>
+          </div>
+          <div class="text-center py-2">
+            <button type="submit" class="text-xl px-12 py-4 rounded-lg shadow-md btn-normal"><i class="fas fa-envelope"></i>&nbsp;Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="about" class="section-about">
+      <h3 class="text-center text-3xl">About us</h3>
+      <div class="text-lg">
+        <p>We have been in the home building industry for over 35 years. We create a unique build, paying attention not only to detail in cosetic appeal, but also the quality of construction.</p>
+        <p>We're here to serve you in Powhatan, Goochland, Chesterfield, Amelia, Cumberland, Farmville, Buckingham and the surrounding areas.</p>
+        <p>Whether you're looking for your first home or your <strong>forever</strong> home, we would love to serve you!</p>
+      </div>
     </section>
 
     <footer class="px-12 py-12 text-center">
