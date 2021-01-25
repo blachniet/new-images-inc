@@ -1,6 +1,7 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "{{.Site.Title}}",
+    "short_name": "{{.Site.Title}}",
+    "description": "{{.Site.Params.description}}",
     "icons": [
         {
             "src": "{{.Site.BaseURL}}android-chrome-192x192.png",

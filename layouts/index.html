@@ -13,15 +13,15 @@
   </script>
 
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
+  <title>{{.Site.Title}}</title>
+  <meta name="description" content="{{.Site.Params.description}}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="New Images, Inc.">
+  <meta property="og:title" content="{{.Site.Title}}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{.Site.BaseURL}}">
   <meta property="og:image" content="{{.Site.BaseURL}}img/logo-150.png">
-  <meta property="og:description" content="We build quality homes in any price range!">
+  <meta property="og:description" content="{{.Site.Params.description}}">
   <meta property="og:determiner" content="">
   <meta property="og:locale" content="en_US">
   <meta property="fb:app_id" content="113296066822580">
@@ -61,7 +61,7 @@
       </div>
     </div>
 
-    <div class="py-12 text-2xl text-center">We build quality homes in any price range!</div>
+    <div class="py-12 text-2xl text-center">{{.Site.Params.description}}</div>
 
     <div class="py-12 text-center">
       <a class="btn text-4xl py-6 px-10" href="tel:+18042406305"><i class="fas fa-phone-alt"></i>&nbsp;Call Now</a>

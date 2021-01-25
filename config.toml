@@ -1,3 +1,6 @@
 baseURL = "https://newimagesva.com/"
 languageCode = "en-us"
-title = "New Images"
+title = "New Images, Inc."
+
+[params]
+description = "We build quality homes in any price range!"
