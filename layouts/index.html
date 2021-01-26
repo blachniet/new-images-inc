@@ -64,23 +64,29 @@
     <div class="py-12 text-2xl text-center">{{.Site.Params.description}}</div>
 
     <div class="py-6 text-center">
-      <a href="#contact" class="text-2xl px-10 py-6 rounded-lg shadow-md btn-normal no-underline"><i class="fas fa-envelope"></i>&nbsp;Contact Us</a>
+        <a href="#contact" class="text-2xl px-10 py-6 rounded-lg shadow-md btn-normal no-underline inline-block"><i class="fas fa-envelope"></i>&nbsp;Contact Us</a>
     </div>
 
-    <section id="services" class="py-12">
-      <h3 class="text-3xl text-center">Services</h3>
+    <section id="services" class="section-services pb-12">
+      <h3 class="py-6 text-3xl text-center">Services</h3>
       <div class="flex">
-        <div class="flex-1 text-center card">
-          <img class="max-w-sm rounded-lg" src="{{.Site.BaseURL}}img/ryan-ancill-nGsVMkRatgM-unsplash.jpg">
-          <div class="text-2xl py-4">Custom Homes</div>
+        <div class="flex-1 text-center">
+          <div class="m-4 inline-block shadow-md rounded-lg text-center card">
+            <img class="max-w-sm rounded-t-lg" src="{{.Site.BaseURL}}img/ryan-ancill-nGsVMkRatgM-unsplash.jpg">
+            <div class="text-2xl py-4">Custom Homes</div>
+          </div>
         </div>
         <div class="flex-1 text-center card">
-          <img class="max-w-sm rounded-lg" src="{{.Site.BaseURL}}img/jessie-mccall-a9_8YKoqIYo-unsplash.jpg">
-          <div class="text-2xl py-4">Additions</div>
+          <div class="m-4 inline-block shadow-md rounded-lg text-center card">
+            <img class="max-w-sm rounded-t-lg" src="{{.Site.BaseURL}}img/jessie-mccall-a9_8YKoqIYo-unsplash.jpg">
+            <div class="text-2xl py-4">Additions</div>
+          </div>
         </div>
         <div class="flex-1 text-center card">
-          <img class="max-w-sm rounded-lg" src="{{.Site.BaseURL}}img/im3rd-media-HlJuQDBh3w4-unsplash.jpg">
-          <div class="text-2xl py-4">Decks & Sheds</div>
+          <div class="m-4 inline-block shadow-md rounded-lg text-center card">
+            <img class="max-w-sm rounded-t-lg" src="{{.Site.BaseURL}}img/im3rd-media-HlJuQDBh3w4-unsplash.jpg">
+            <div class="text-2xl py-4">Decks & Sheds</div>
+          </div>
         </div>
       </div>
     </section>

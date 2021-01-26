@@ -87,6 +87,10 @@ body {
   display: block;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -162,7 +166,6 @@ body {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-
 .p-4 {
   padding: 1rem;
 }
@@ -207,6 +210,9 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
+.pb-12 {
+  padding-bottom: 3rem;
+}
 .p-48 {
   padding: 12rem;
 }
@@ -217,6 +223,9 @@ body {
 .py-48 {
   padding-top: 12rem;
   padding-bottom: 12rem;
+}
+.m-4 {
+  margin: 1rem;
 }
 
 .w-full {
@@ -231,6 +240,10 @@ body {
 }
 .rounded-lg {
   border-radius: 0.5rem;
+}
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .shadow-md {
@@ -269,14 +282,14 @@ body {
 }
 
 @media (max-width: 767.98px) {
-  .card:first{
-    padding-top: 0;
-  }
   .card > img {
     max-width: 24rem;
   }
 }
 
+.section-services {
+  background-color: #f8f9fa;
+}
 .section-about {
   padding: 1rem 12rem;
 }
