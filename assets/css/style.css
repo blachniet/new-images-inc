@@ -277,6 +277,10 @@ body {
   background-color: rgba(0,104,162,1.0000000000);
 }
 
+.card {
+  background-color: white;
+}
+
 .card > img {
   max-width: 16rem;
 }
@@ -312,14 +316,11 @@ body {
   }
 }
 
-
-.main > footer {
-  color: white;
-  background-color: #333;
-  box-shadow: 2px 0px 5px #333;
+.main footer {
+  background-color: #f8f9fa;
 }
 
 .main footer a {
-  color: white;
+  color: rgba(0,123,191,1.0000000000);
   text-decoration: none;
 }
