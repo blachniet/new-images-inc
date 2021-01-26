@@ -227,6 +227,10 @@ body {
 .m-4 {
   margin: 1rem;
 }
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
 .w-full {
   width: 100%;
