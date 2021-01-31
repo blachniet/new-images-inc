@@ -24,7 +24,7 @@ echo "Removing existing files"
 rm -rf public/*
 
 echo "Generating site"
-hugo
+NODE_ENV=production hugo
 
 echo "Putting the CNAME file back"
 mv CNAME public/
