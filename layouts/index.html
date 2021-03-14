@@ -41,22 +41,18 @@
 </head>
 
 <body>
-  <!-- <nav class="topnav">
-    <a onClick="document.getElementsByClassName('sidenav')[0].classList.toggle('open');">Menu</a>
-    <a class="navbar-brand" href="#">New Images</a>
+  <nav class="flex flex-row-reverse sticky top-0 z-10 bg-nidark items-center p-2 pr-4">
+    <a class="flex-grow-0 text-2xl text-white" onClick="toggleSidenav()"><i class="fas fa-bars"></i></a>
+    <h1 class="flex-auto ml-2 text-2xl font-bold bg-clip-text bg-gradient-to-b from-niblue-dark to-niblue-light text-transparent">NEW IMAGES<small>, INC</small></h1>
+    <img src="{{.Site.BaseURL}}img/logo-only-transparent.png" alt="New Images logo" class="h-12">
   </nav>
 
-  <nav class="sidenav">
-    <a onClick="document.getElementsByClassName('sidenav')[0].classList.toggle('open');">Close</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav> -->
+  <nav class="sidenav bg-nidark">
+    <a onClick="toggleSidenav()" href="#about">About</a>
+    <a onClick="toggleSidenav()" href="#contact">Contact</a>
+  </nav>
 
   <div class="main">
-    <div class="text-center py-4 title items-center justify-center">
-      <img src="{{.Site.BaseURL}}img/logo-only.png" alt="New Images logo" class="h-12">
-      <h1 class="inline text-3xl font-bold">NEW IMAGES<small>, INC</small></h1>
-    </div>
 
     <div class="hero">
     </div>
@@ -134,6 +130,11 @@
       <div class="text-sm">Copyright &copy; New Images, Inc. {{ now.Format "2006" }}</div>
     </footer>
 
+    <script type=text/javascript>
+    function toggleSidenav() {
+      document.getElementsByClassName('sidenav')[0].classList.toggle('open');
+    }
+    </script>
   </div>
 
 </html>
