@@ -35,20 +35,25 @@
   <link rel="icon" type="image/png" sizes="16x16" href="https://newimagesva.com/favicon-16x16.png">
 
   
-  <link rel="stylesheet" href="https://newimagesva.com/css/style.min.2b52782f042170c2e39e40d8cc533758ba25e5d80dada6738acdc76ed73b9dc8.css">
+  <link rel="stylesheet" href="https://newimagesva.com/css/style.min.71b226e3d9c51f1f6ea3bb371a4106cce29630f0aeb52f69b7608405bdb8941b.css">
   <link href="https://newimagesva.com/fontawesome/css/all.min.css" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-  
+  <nav class="flex flex-row-reverse sticky top-0 z-10 bg-nidark items-center p-2 pr-4">
+    <a class="flex-grow-0 text-2xl text-white" onClick="toggleSidenav()"><i class="fas fa-bars"></i></a>
+    <h1 class="flex-auto ml-2 text-2xl font-bold bg-clip-text bg-gradient-to-b from-niblue-dark to-niblue-light text-transparent">NEW IMAGES<small>, INC</small></h1>
+    <img src="https://newimagesva.com/img/logo-only-transparent.png" alt="New Images logo" class="h-12">
+  </nav>
+
+  <nav class="sidenav bg-nidark">
+    <a onClick="toggleSidenav()" href="#about">About</a>
+    <a onClick="toggleSidenav()" href="#contact">Contact</a>
+  </nav>
 
   <div class="main">
-    <div class="text-center py-4 title items-center justify-center">
-      <img src="https://newimagesva.com/img/logo-only.png" alt="New Images logo" class="h-12">
-      <h1 class="inline text-3xl font-bold">NEW IMAGES<small>, INC</small></h1>
-    </div>
 
     <div class="hero">
     </div>
@@ -126,6 +131,11 @@
       <div class="text-sm">Copyright &copy; New Images, Inc. 2021</div>
     </footer>
 
+    <script type=text/javascript>
+    function toggleSidenav() {
+      document.getElementsByClassName('sidenav')[0].classList.toggle('open');
+    }
+    </script>
   </div>
 
 </html>
