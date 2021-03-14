@@ -84,15 +84,6 @@ body {
   box-shadow: 2px 0px 5px #333;
 }
 
-.flex-or-block {
-  display: flex
-}
-@media (max-width: 767.98px) {
-  .flex-or-block {
-    display: block;
-  }
-}
-
 .home-section {
   padding: 2em;
 }
